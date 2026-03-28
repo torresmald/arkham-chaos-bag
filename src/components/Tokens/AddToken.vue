@@ -63,11 +63,11 @@
 </template>
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import { tokens } from "../types/token";
-import { useChaosBagStore } from "../stores/bag/chaos";
-import type { Token } from "../types/token";
-import type { TokenType } from "../types/token";
-import Modal from "./modal/Modal.vue";
+import { tokens } from "../../data/tokens/tokens";
+import { useChaosBagStore } from "../../stores/bag/chaos";
+import type { Token } from "../../types/token";
+import type { TokenType } from "../../types/token";
+import Modal from "../modal/Modal.vue";
 
 const store = useChaosBagStore();
 const isOpen = ref(false);

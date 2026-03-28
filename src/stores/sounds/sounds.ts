@@ -3,6 +3,8 @@ import failSound from "../../assets/sounds/fail.mp3";
 import shuffleSound from "../../assets/sounds/shuffle.mp3";
 import { defineStore } from "pinia";
 import { useChaosBagStore } from "../bag/chaos";
+const voiceId = "zAgdErjrxjfLDAiVdEij";
+const elevenlabsApiKey = import.meta.env.VITE_ELEVENLABS_API_KEY;
 export const useSoundsStore = defineStore('sounds', {
     state: () => ({
         success: new Audio(successSound) as HTMLAudioElement,
@@ -10,6 +12,7 @@ export const useSoundsStore = defineStore('sounds', {
         shuffle: new Audio(shuffleSound) as HTMLAudioElement,
         disableAudio: false,
         volume: 0.7,
+        speechCache: new Map<string, string>(),
     }),
     actions: {
         applyVolume() {
@@ -61,6 +64,43 @@ export const useSoundsStore = defineStore('sounds', {
             this.stop(this.shuffle);
             this.stop(this.success);
             this.stop(this.fail);
+        },
+        async speak(text: string) {
+            try {
+                if (this.disableAudio) return;
+                this.applyVolume();
+
+                const cachedAudioUrl = this.speechCache.get(text);
+                if (cachedAudioUrl) {
+                    const cachedAudio = new Audio(cachedAudioUrl);
+                    cachedAudio.volume = this.volume;
+                    await cachedAudio.play();
+                    this.speechCache.set(text, cachedAudioUrl);
+                    return;
+                }
+
+                const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'audio/mpeg',
+                        'Content-Type': 'application/json',
+                        'xi-api-key': elevenlabsApiKey,
+                    },
+                    body: JSON.stringify({
+                        text: text,
+                        voice_id: voiceId,
+                    }),
+                });
+                const audioBlob = await response.blob();
+                const audioUrl = URL.createObjectURL(audioBlob);
+                this.speechCache.set(text, audioUrl);
+                const audio = new Audio(audioUrl);
+                audio.volume = this.volume;
+                await audio.play();
+            } catch (error) {
+                console.error(error);
+            }
+
         }
     },
 });

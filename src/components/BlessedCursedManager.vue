@@ -109,7 +109,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { useChaosBagStore } from "../stores/bag/chaos";
-import { tokens } from "../types/token";
+import { tokens } from "../data/tokens/tokens";
 import type { Token } from "../types/token";
 import Modal from "./modal/Modal.vue";
 
