@@ -6,13 +6,13 @@
     >
       <img
         v-if="soundsStore.disableAudio"
-        src="/src/assets/sounds/audio_off.svg"
+        :src="audioOff"
         alt="Audio apagado"
         class="h-4 w-4"
       />
       <img
         v-else
-        src="/src/assets/sounds/audio.svg"
+        :src="audioOn"
         alt="Audio activo"
         class="h-4 w-4"
       />
@@ -60,7 +60,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, watch } from "vue";
+import { onMounted, onUnmounted, ref, watch, computed } from "vue";
 import { useSoundsStore } from "@/stores/sounds/sounds";
 const soundsStore = useSoundsStore();
 const isAudioModalOpen = ref(false);
@@ -78,6 +78,14 @@ const handleClickOutside = (event: MouseEvent) => {
     isAudioModalOpen.value = false;
   }
 };
+
+const audioOff = computed(() => {
+  return "/assets/sounds/audio_off.svg";
+});
+
+const audioOn = computed(() => {
+  return "/assets/sounds/audio.svg";
+});
 
 onMounted(() => {
   window.addEventListener("mousedown", handleClickOutside);

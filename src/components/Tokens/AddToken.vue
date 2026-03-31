@@ -9,7 +9,7 @@
         class="flex items-center justify-center w-full gap-1 rounded-lg border border-slate-700 bg-slate-800/50 px-1 py-1.5"
       >
         <img
-          :src="'/src/assets/bag.png'"
+          :src="bagImage"
           :alt="`Bolsa de Chaos`"
           class="h-10 w-10 rounded-full border border-slate-700 object-contain"
         />
@@ -71,6 +71,10 @@ import Modal from "@/components/modal/Modal.vue";
 
 const store = useChaosBagStore();
 const isOpen = ref(false);
+
+const bagImage = computed(() => {
+  return "/assets/bag.png";
+});
 
 const availableTokens = computed(() =>
   tokens.filter((token) => token.type !== "blessed" && token.type !== "cursed"),

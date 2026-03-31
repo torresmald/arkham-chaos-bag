@@ -1,6 +1,3 @@
-import successSound from "@/assets/sounds/success.mp3";
-import failSound from "@/assets/sounds/fail.mp3";
-import shuffleSound from "@/assets/sounds/shuffle.mp3";
 import { defineStore } from "pinia";
 import { useChaosBagStore } from "@/stores/bag/chaos";
 const voiceId = "zAgdErjrxjfLDAiVdEij";
@@ -25,9 +22,9 @@ const waitForAudioToFinish = (audio: HTMLAudioElement) =>
 
 export const useSoundsStore = defineStore('sounds', {
     state: () => ({
-        success: new Audio(successSound) as HTMLAudioElement,
-        fail: new Audio(failSound) as HTMLAudioElement,
-        shuffle: new Audio(shuffleSound) as HTMLAudioElement,
+        success: new Audio("/sounds/success.mp3") as HTMLAudioElement,
+        fail: new Audio("/sounds/fail.mp3") as HTMLAudioElement,
+        shuffle: new Audio("/sounds/shuffle.mp3") as HTMLAudioElement,
         disableAudio: false,
         volume: 0.7,
         speechCache: new Map<string, string>(),

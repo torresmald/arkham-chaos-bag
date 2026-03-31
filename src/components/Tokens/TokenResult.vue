@@ -41,7 +41,7 @@
         >
           <img
            
-            src="/src/assets/back.webp"
+            :src="backImage"
             class="h-[100px] w-[100px] rounded-full border-2 border-[#aaa] bg-white object-contain"
             alt="Token Back"
           />
@@ -54,12 +54,17 @@
 <script setup lang="ts">
 import { useChaosBagStore } from "@/stores/bag/chaos";
 import type { Token } from "@/types/token";
+import { computed } from "vue";
 
 const store = useChaosBagStore();
 
 const { token } = defineProps<{
   token: Token | null;
 }>();
+
+const backImage = computed(() => {
+  return "/assets/back.webp";
+});
 </script>
 
 <style>
