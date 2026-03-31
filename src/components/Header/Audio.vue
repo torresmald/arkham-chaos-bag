@@ -61,7 +61,7 @@
 </template>
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, watch } from "vue";
-import { useSoundsStore } from "../../stores/sounds/sounds";
+import { useSoundsStore } from "@/stores/sounds/sounds";
 const soundsStore = useSoundsStore();
 const isAudioModalOpen = ref(false);
 const localVolume = ref(soundsStore.volume);

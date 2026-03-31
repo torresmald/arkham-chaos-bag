@@ -31,15 +31,15 @@
 
 <script setup lang="ts">
 import { computed, onMounted } from "vue";
-import Header from "../components/Header/Header.vue";
-import TokenResult from "../components/Tokens/TokenResult.vue";
-import TokenExtracted from "../components/Tokens/TokenExtracted.vue";
-import DrawTokens from "../components/Tokens/DrawTokens.vue";
-import AddToken from "../components/Tokens/AddToken.vue";
-import BlessedCursedManager from "../components/BlessedCursedManager.vue";
-import ShowBag from "../components/ShowBag.vue";
-import { useChaosBagStore } from "../stores/bag/chaos";
-import { useModalStore } from "../stores/modal/modal";
+import Header from "@/components/Header/Header.vue";
+import TokenResult from "@/components/Tokens/TokenResult.vue";
+import TokenExtracted from "@/components/Tokens/TokenExtracted.vue";
+import DrawTokens from "@/components/Tokens/DrawTokens.vue";
+import AddToken from "@/components/Tokens/AddToken.vue";
+import BlessedCursedManager from "@/components/BlessedCursedManager.vue";
+import ShowBag from "@/components/ShowBag.vue";
+import { useChaosBagStore } from "@/stores/bag/chaos";
+import { useModalStore } from "@/stores/modal/modal";
 
 const store = useChaosBagStore();
 const modalStore = useModalStore();

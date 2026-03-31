@@ -52,8 +52,8 @@
 </template>
 
 <script setup lang="ts">
-import { useChaosBagStore } from "../../stores/bag/chaos";
-import type { Token } from "../../types/token";
+import { useChaosBagStore } from "@/stores/bag/chaos";
+import type { Token } from "@/types/token";
 
 const store = useChaosBagStore();
 

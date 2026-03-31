@@ -24,8 +24,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useChaosBagStore } from "../../stores/bag/chaos";
-import { useSoundsStore } from "../../stores/sounds/sounds";
+import { useChaosBagStore } from "@/stores/bag/chaos";
+import { useSoundsStore } from "@/stores/sounds/sounds";
 import { computed } from "vue";
 const store = useChaosBagStore();
 const isDrawing = computed(() => store.isDrawing);

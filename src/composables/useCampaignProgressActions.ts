@@ -1,5 +1,5 @@
-import { useChaosBagStore } from "../stores/bag/chaos";
-import { useSoundsStore } from "../stores/sounds/sounds";
+import { useChaosBagStore } from "@/stores/bag/chaos";
+import { useSoundsStore } from "@/stores/sounds/sounds";
 import type { useCampaignProgressState } from "./useCampaignProgressState";
 
 type CampaignProgressState = ReturnType<typeof useCampaignProgressState>;

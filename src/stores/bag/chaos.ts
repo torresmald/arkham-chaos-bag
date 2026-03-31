@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import type { Token } from '../../types/token'
+import type { Token } from '@/types/token'
 
 const BAG_STORAGE_KEY = 'arkham-chaos-bag'
 const SEALED_STORAGE_KEY = 'arkham-chaos-sealed'

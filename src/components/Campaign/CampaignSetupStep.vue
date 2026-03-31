@@ -84,7 +84,7 @@ import type {
   CampaignConfigFile,
   CampaignScenario,
   Difficulty,
-} from "../../types/campaign";
+} from "@/types/campaign";
 
 const props = defineProps<{
   campaigns: CampaignConfigFile[];

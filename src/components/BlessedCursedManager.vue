@@ -108,10 +108,10 @@
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import { useChaosBagStore } from "../stores/bag/chaos";
-import { tokens } from "../data/tokens/tokens";
-import type { Token } from "../types/token";
-import Modal from "./modal/Modal.vue";
+import { useChaosBagStore } from "@/stores/bag/chaos";
+import { tokens } from "@/data/tokens/tokens";
+import type { Token } from "@/types/token";
+import Modal from "@/components/modal/Modal.vue";
 
 const store = useChaosBagStore();
 const isOpen = ref(false);

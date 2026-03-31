@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import type { Difficulty, CampaignConfigFile, CampaignProgress, CampaignScenario } from "../../types/campaign";
+import type { Difficulty, CampaignConfigFile, CampaignProgress, CampaignScenario } from "@/types/campaign";
 const CAMPAIGNS_STORAGE_KEY = "arkham-chaos-campaigns";
 const DIFFICULTY_STORAGE_KEY = "arkham-chaos-difficulty";
 const PROGRESS_STORAGE_KEY = "arkham-chaos-campaign-progress";
@@ -18,7 +18,7 @@ export const useCampaignStore = defineStore("campaign", {
     }),
     actions: {
         async loadCampaigns() {
-            const campaigns = import.meta.glob("../../data/campaigns/*.json");
+            const campaigns = import.meta.glob("@/data/campaigns/*.json");
             const campaignsData = await Promise.all(Object.values(campaigns).map(async (module) => {
                 const loaded = await module();
                 const data = (loaded as { default?: CampaignConfigFile }).default ?? (loaded as CampaignConfigFile);

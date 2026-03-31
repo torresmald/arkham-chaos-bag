@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import ChaosBagView from "../views/ChaosBagView.vue";
-import CampaignManagerView from "../views/CampaignManagerView.vue";
+import ChaosBagView from "@/views/ChaosBagView.vue";
+import CampaignManagerView from "@/views/CampaignManagerView.vue";
 
 const router = createRouter({
   history: createWebHistory(),

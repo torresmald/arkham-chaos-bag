@@ -18,9 +18,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useChaosBagStore } from "../../stores/bag/chaos";
+import { useChaosBagStore } from "@/stores/bag/chaos";
 import { computed } from "vue";
 const store = useChaosBagStore();
 const temporarilyDrawnTokens = computed(() => store.temporarilyDrawnTokens);
 </script>
-<style scoped></style>

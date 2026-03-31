@@ -43,9 +43,9 @@
 
 <script setup lang="ts">
 import { onMounted } from "vue";
-import CampaignSetupStep from "./Campaign/CampaignSetupStep.vue";
-import CampaignManageStep from "./Campaign/CampaignManageStep.vue";
-import { useCampaignProgress } from "../composables/useCampaignProgress";
+import CampaignSetupStep from "@/components/Campaign/CampaignSetupStep.vue";
+import CampaignManageStep from "@/components/Campaign/CampaignManageStep.vue";
+import { useCampaignProgress } from "@/composables/useCampaignProgress";
 const emit = defineEmits<{
   (e: "close-selector"): void;
 }>();

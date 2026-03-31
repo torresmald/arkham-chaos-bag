@@ -99,7 +99,7 @@
 </template>
 <script setup lang="ts">
 import CurrentScenarioText from "./CurrentScenarioText.vue";
-import type { CampaignScenario, Track } from "../../types/campaign";
+import type { CampaignScenario, Track } from "@/types/campaign";
 import { computed } from "vue";
 const props = defineProps<{
   currentScenarioText: string;

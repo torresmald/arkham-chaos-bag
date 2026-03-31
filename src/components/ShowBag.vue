@@ -84,9 +84,9 @@
   </Modal>
 </template>
 <script setup lang="ts">
-import { useChaosBagStore } from "../stores/bag/chaos";
+import { useChaosBagStore } from "@/stores/bag/chaos";
 import { computed, ref } from "vue";
-import Modal from "./modal/Modal.vue";
+import Modal from "@/components/modal/Modal.vue";
 const store = useChaosBagStore();
 const bag = computed(() => store.bag);
 const sealedTokens = computed(() => store.sealedTokens);

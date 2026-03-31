@@ -35,10 +35,10 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 import { useRouter } from "vue-router";
-import CampaignSelector from "../components/CampaignSelector.vue";
-import CurrentCampaignData from "../components/Campaign/CurrentCampaignData.vue";
-import { useChaosBagStore } from "../stores/bag/chaos";
-import { useCampaignStore } from "../stores/campaign/campaign";
+import CampaignSelector from "@/components/CampaignSelector.vue";
+import CurrentCampaignData from "@/components/Campaign/CurrentCampaignData.vue";
+import { useChaosBagStore } from "@/stores/bag/chaos";
+import { useCampaignStore } from "@/stores/campaign/campaign";
 
 const router = useRouter();
 const bagStore = useChaosBagStore();

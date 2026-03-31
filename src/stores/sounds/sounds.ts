@@ -1,8 +1,8 @@
-import successSound from "../../assets/sounds/success.mp3";
-import failSound from "../../assets/sounds/fail.mp3";
-import shuffleSound from "../../assets/sounds/shuffle.mp3";
+import successSound from "@/assets/sounds/success.mp3";
+import failSound from "@/assets/sounds/fail.mp3";
+import shuffleSound from "@/assets/sounds/shuffle.mp3";
 import { defineStore } from "pinia";
-import { useChaosBagStore } from "../bag/chaos";
+import { useChaosBagStore } from "@/stores/bag/chaos";
 const voiceId = "zAgdErjrxjfLDAiVdEij";
 const elevenlabsApiKey = import.meta.env.VITE_ELEVENLABS_API_KEY;
 

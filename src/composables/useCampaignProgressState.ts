@@ -1,12 +1,12 @@
 import { computed, ref, watch } from "vue";
-import { useCampaignStore } from "../stores/campaign/campaign";
+import { useCampaignStore } from "@/stores/campaign/campaign";
 import {
   difficulties,
   type CampaignPhase,
   type CampaignTransition,
   type Difficulty,
   type Track,
-} from "../types/campaign";
+} from "@/types/campaign";
 
 export interface UseCampaignProgressStateOptions {
   persistProgress?: boolean;
