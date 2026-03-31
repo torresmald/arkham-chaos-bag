@@ -22,9 +22,9 @@ const waitForAudioToFinish = (audio: HTMLAudioElement) =>
 
 export const useSoundsStore = defineStore('sounds', {
     state: () => ({
-        success: new Audio("/sounds/success.mp3") as HTMLAudioElement,
-        fail: new Audio("/sounds/fail.mp3") as HTMLAudioElement,
-        shuffle: new Audio("/sounds/shuffle.mp3") as HTMLAudioElement,
+        success: new Audio("/assets/sounds/success.mp3") as HTMLAudioElement,
+        fail: new Audio("/assets/sounds/fail.mp3") as HTMLAudioElement,
+        shuffle: new Audio("/assets/sounds/shuffle.mp3") as HTMLAudioElement,
         disableAudio: false,
         volume: 0.7,
         speechCache: new Map<string, string>(),
