@@ -1,0 +1,595 @@
+{
+  "campaign": "Dunwich",
+  "icon": "/src/assets/campaigns/dunwich.png",
+  "difficulties": {
+    "facil": {
+      "difficulty": "Facil",
+      "tokens": [
+        {
+          "type": "+1",
+          "image": {
+            "front": "/src/assets/tokens/+1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "+1",
+          "image": {
+            "front": "/src/assets/tokens/+1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "0",
+          "image": {
+            "front": "/src/assets/tokens/0.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "0",
+          "image": {
+            "front": "/src/assets/tokens/0.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "0",
+          "image": {
+            "front": "/src/assets/tokens/0.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-1",
+          "image": {
+            "front": "/src/assets/tokens/-1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-1",
+          "image": {
+            "front": "/src/assets/tokens/-1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-1",
+          "image": {
+            "front": "/src/assets/tokens/-1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-2",
+          "image": {
+            "front": "/src/assets/tokens/-2.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-2",
+          "image": {
+            "front": "/src/assets/tokens/-2.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "skull",
+          "image": {
+            "front": "/src/assets/tokens/skull.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "skull",
+          "image": {
+            "front": "/src/assets/tokens/skull.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "cultist",
+          "image": {
+            "front": "/src/assets/tokens/cultist.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "success",
+          "image": {
+            "front": "/src/assets/tokens/success.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "fail",
+          "image": {
+            "front": "/src/assets/tokens/fail.png",
+            "back": "/src/assets/back.webp"
+          }
+        }
+      ]
+    },
+    "medio": {
+      "difficulty": "Medio",
+      "tokens": [
+        {
+          "type": "+1",
+          "image": {
+            "front": "/src/assets/tokens/+1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "0",
+          "image": {
+            "front": "/src/assets/tokens/0.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "0",
+          "image": {
+            "front": "/src/assets/tokens/0.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-1",
+          "image": {
+            "front": "/src/assets/tokens/-1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-1",
+          "image": {
+            "front": "/src/assets/tokens/-1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-1",
+          "image": {
+            "front": "/src/assets/tokens/-1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-2",
+          "image": {
+            "front": "/src/assets/tokens/-2.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-2",
+          "image": {
+            "front": "/src/assets/tokens/-2.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-3",
+          "image": {
+            "front": "/src/assets/tokens/-3.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-4",
+          "image": {
+            "front": "/src/assets/tokens/-4.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "skull",
+          "image": {
+            "front": "/src/assets/tokens/skull.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "skull",
+          "image": {
+            "front": "/src/assets/tokens/skull.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "cultist",
+          "image": {
+            "front": "/src/assets/tokens/cultist.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "success",
+          "image": {
+            "front": "/src/assets/tokens/success.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "fail",
+          "image": {
+            "front": "/src/assets/tokens/fail.png",
+            "back": "/src/assets/back.webp"
+          }
+        }
+      ]
+    },
+    "dificil": {
+      "difficulty": "Dificil",
+      "tokens": [
+        {
+          "type": "0",
+          "image": {
+            "front": "/src/assets/tokens/0.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-1",
+          "image": {
+            "front": "/src/assets/tokens/-1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-1",
+          "image": {
+            "front": "/src/assets/tokens/-1.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-2",
+          "image": {
+            "front": "/src/assets/tokens/-2.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-2",
+          "image": {
+            "front": "/src/assets/tokens/-2.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-3",
+          "image": {
+            "front": "/src/assets/tokens/-3.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-3",
+          "image": {
+            "front": "/src/assets/tokens/-3.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-4",
+          "image": {
+            "front": "/src/assets/tokens/-4.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-4",
+          "image": {
+            "front": "/src/assets/tokens/-4.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "-5",
+          "image": {
+            "front": "/src/assets/tokens/-5.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "skull",
+          "image": {
+            "front": "/src/assets/tokens/skull.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "skull",
+          "image": {
+            "front": "/src/assets/tokens/skull.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "cultist",
+          "image": {
+            "front": "/src/assets/tokens/cultist.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "success",
+          "image": {
+            "front": "/src/assets/tokens/success.png",
+            "back": "/src/assets/back.webp"
+          }
+        },
+        {
+          "type": "fail",
+          "image": {
+            "front": "/src/assets/tokens/fail.png",
+            "back": "/src/assets/back.webp"
+          }
+        }
+      ]
+    }
+  },
+  "prologue": {
+    "id": "prologo",
+    "name": "Prólogo",
+    "baseText": "El Dr. Henry Armitage se sirve un vaso de pinot y toma asiento en su mesa mientras os hace un gesto para que os sentéis frente a él. –Lamento haberos avisado con tan poca antelación –os dice. Tiene el rostro pálido, y el sudor le perla las arrugas de preocupación que surcan su frente.Armitage, el bibliotecario jefe de la Universidad Miskatonic y antiguo mentor vuestro, se puso en contacto con vosotros de forma privada con la esperanza de conseguir vuestra ayuda. Deseosos de prestársela, os pusisteis camino de su casa en el Barrio Sur. Al entrar, os sorprendió ver el desorden imperante. Había libros y notas desperdigadas por su escritorio, y una botella de vino volcada en el suelo junto a la chimenea. El Armitage que siempre habéis conocido era una persona pulcra y bien organizada.El anciano se toma un instante para componer sus ideas y os dice: –Estoy buscando a dos de mis colegas: el Dr. Francis Morgan, profesor de Arqueología, y Warren Rice, profesor de idiomas. Se suponía que Warren iba a reunirse conmigo para almorzar hoy, ya que íbamos a hablar acerca de varios hallazgos importantes, pero ha desaparecido desde entonces. Al principio no le di importancia, pero tengo la acuciante sensación de que hay algo más. Es una sensación muy… familiar. Nunca antes habéis visto a Armitage tan preocupado. Cuando va a coger el vaso de su escritorio, le tiemblan las manos, y da un sorbo de forma nerviosa. –Intenté encontrar a Francis, con la esperanza de que supiera donde estaba Warren, pero él también está ilocalizable. Francis ha estado frecuentando un garito de juego muy a menudo, o eso me han dicho.–Os he llamado porque me preocupa que Warren pueda estar en problemas. Os estaría muy agradecido si pudierais encontrarlo. Y puede que también queráis pedirle ayuda a Francis si lográis dar con él."
+  },
+  "scenarios": [
+    {
+      "id": "extracurricular",
+      "name": "Escenario 1A: Actividad extracurricular",
+      "baseText": "Al Dr. Armitage le preocupa que su colega, el profesor Warren Rice, pueda estar en problemas, así que os ha pedido ayuda para encontrar a su amigo. Parece irracionalmente nervioso por la desaparición de su colega teniendo en cuenta que el profesor Rice sólo ha estado “desaparecido” unas horas…",
+      "texts": {
+        "agenda": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de agenda 1A",
+              "textBack": "Texto posterior de agenda 1A"
+            },
+            {
+              "textFront": "Texto frontal de agenda 1B",
+              "textBack": "Texto posterior de agenda 1B"
+            }
+          ]
+        },
+        "act": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de acto 1A",
+              "textBack": "Texto posterior de acto 1A"
+            },
+            {
+              "textFront": "Texto frontal de acto 1B",
+              "textBack": "Texto posterior de acto 1B",
+              "next": {
+                "type": "scenario",
+                "scenarioId": "house"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "house",
+      "name": "Escenario 1B: La Casa Siempre Gana",
+      "baseText": "El Dr. Armitage os sugirió que buscaseis a su socio, el Dr. Francis Morgan. No está seguro de si el Dr. Morgan tiene problemas, pero no le agradan particularmente las compañías que está frecuentando su colega. Se encuentra en el Clover Club, un notorio garito de juego en algún lugar del centro. Encontrar la ubicación exacta del club no es fácil; tenéis que untar unas cuantas manos sólo para descubrir cuál de los restaurantes del centro actúa como tapadera del club. Se trata de La Bella Luna, un establecimiento italiano de cierta sofisticación que hay junto al teatro. Os ponéis vuestras mejores galas y os dirigís allí. Delante de La Bella Luna hay un hombre con traje de raya diplomática que os escudriña con la mirada cuando os acercáis. –Que lo pasen bien –os dice con una sonrisa taimada mientras abre la puerta del restaurante.",
+      "texts": {
+        "agenda": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de agenda 1A",
+              "textBack": "Texto posterior de agenda 1A"
+            },
+            {
+              "textFront": "Texto frontal de agenda 1B",
+              "textBack": "Texto posterior de agenda 1B"
+            }
+          ]
+        },
+        "act": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de acto 1A",
+              "textBack": "Texto posterior de acto 1A"
+            },
+            {
+              "textFront": "Texto frontal de acto 1B",
+              "textBack": "Texto posterior de acto 1B"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "escenario2",
+      "name": "Escenario II: El museo Miskatonic",
+      "baseText": "Hace algunos meses, Armitage y sus colegas detuvieron a un horror desatado que iba a destruir Dunwich, una apartada ciudad que se encuentra a varias horas de Arkham, hacia el noroeste. Al principio pensáis que esta bestia es un oso rabioso o algo peor, pero la descripción que hace el profesor de la criatura describe algo muy distinto.Todo comenzó cuando un hombre llamado Wilbur Whateley entró en la biblioteca Orne en busca de la traducción al latín de Olaus Wormius de un libro llamado el Necronomicón. Wilbur ya poseía una ajada traducción al inglés del Dr. John Dee, pero no le bastaba para sus propósitos. Armitage le prohibió el acceso, pues temía el posible uso que pudiera darle al libro ese extraño hombre. Whateley volvió en secreto, con la esperanza de poder robar el libro, pero fue atacado por un sabueso guardián de la universidad. Más tarde, Armitage, Rice y Morgan descubrieron el cuerpo de Whateley. Una descripción del terrible cadáver –semiantropomórfico y cubierto de pelaje, con una piel coriácea y tentáculos de un color gris verdoso– os hace cuestionaros si Whateley era humano realmente.",
+      "texts": {
+        "agenda": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de agenda 2A",
+              "textBack": "Texto posterior de agenda 2A"
+            },
+            {
+              "textFront": "Texto frontal de agenda 2B",
+              "textBack": "Texto posterior de agenda 2B"
+            }
+          ]
+        },
+        "act": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de acto 2A",
+              "textBack": "Texto posterior de acto 2A"
+            },
+            {
+              "textFront": "Texto frontal de acto 2B",
+              "textBack": "Texto posterior de acto 2B"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "escenario3",
+      "name": "Escenario III: El Essex County Express",
+      "baseText": "Los recientes acontecimientos en el museo os han obligado a reconsiderar el relato de Armitage sobre Dunwich. No puede ser una coincidencia: Wilbur Whateley, el Necronomicón, la criatura de Dunwich y la gente y criaturas que os atacaron aquí, en Arkham… todo debe de estar conectado. Ahora estáis seguros de adónde debéis dirigiros: a la solitaria y lúgubre ciudad de Dunwich.Os planteáis contarle a la policía estatal de Massachusetts lo que sabéis, pero las consecuencias negativas superan a cualquier posible beneficio. Dada la naturaleza de vuestra historia, probablemente pensarían que es un fraude absurdo. O peor, podrían encerraros. Después de todo, estuvisteis presentes en un garito ilegal y también os colasteis en el museo. Así que desecháis la idea y decidís dirigiros a Dunwich vosotros mismos para seguir investigando.Metéis en el equipaje todo lo que creéis que podréis necesitar y lográis descansar un poco durante la noche. Por la mañana, vais a la estación de tren del Barrio Norte y compráis billetes de última hora para el tren expreso. Dunwich está a varias horas en tren hacia el noroeste, siguiendo el valle del río Miskatonic. En la localidad no hay estación de tren, pero lográis hablar por teléfono con uno de los conocidos de Armitage que viven allí: se trata de un hombre llamado Zebulon Whateley, que estuvo presente durante los sucesos de hace unos meses.Las notas de Armitage indican que el árbol genealógico de la familia Whateley tiene una gran cantidad de ramas, algunas repletas de miembros de la familia decadentes y sin escrúpulos, y otras “limpias” o libres de la influencia de los ritos diabólicos y siniestros. Según Armitage, la rama de la familia de Zebulon se encuentra entre los Whateley podridos y los no podridos, y aunque conocían las tradiciones de sus ancestros, no fueron corrompidos por ellas. Zebulon accede a recogeros en la estación más cercana y llevaros a la ciudad.Cuando el tren sale de Arkham, notáis que los acontecimientos de la noche anterior empiezan a pasaros factura, y el cansancio os vence. Pero antes de que podáis llegar a vuestro destino sanos y salvos, el vagón empieza a temblar y sacudirse y os saca de vuestro sopor. El tren se detiene brusca y ruidosamente, y oís un traqueteo a vuestra espalda…",
+      "texts": {
+        "agenda": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de agenda 2A",
+              "textBack": "Texto posterior de agenda 2A"
+            },
+            {
+              "textFront": "Texto frontal de agenda 2B",
+              "textBack": "Texto posterior de agenda 2B"
+            }
+          ]
+        },
+        "act": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de acto 2A",
+              "textBack": "Texto posterior de acto 2A"
+            },
+            {
+              "textFront": "Texto frontal de acto 2B",
+              "textBack": "Texto posterior de acto 2B"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "escenario4",
+      "name": "Escenario IV: Sangre en el altar",
+      "baseText": "Cuando por fin llegáis a Dunwich, os reciben Zebulon Whateley y Earl Sawyer, otro hombre del pueblo que conoció al Dr. Armitage durante el incidente de hace unos meses. –Las cosas no pintan bien por aquí –os dice Earl–. Hace varias noches desaparecieron varias personas. Los chotacabras tampoco se callan. No sé a qué han venido, pero la última vez que unos tipos de Arkham estuvieron aquí, no pasó nada bueno. Todo lo contrario. –Sus ojos parpadean rápidamente, y tose a la vez que aparta la mirada.–Oigan, ¿por qué no descansan esta noche y ya buscarán lo que estén buscando mañana? –añade Zebulon mientras le pone la arrugada mano en el hombro a uno de vosotros. Queréis protestar, pero vuestros doloridos músculos y agotada mente no os permiten rechazar la idea. El anciano os ofrece alojaros durante la noche, y os lleva hasta su casa, en las afueras del pueblo de Dunwich. Se trata de una población destartalada y fantasmagórica, y os descubrís deseando no haber venido aquí. Os quedáis dormidos durante el trayecto, y apenas recordáis nada más de esa noche.Cuando despertáis, descubrís que la casa de Zebulon está abandonada, y no hay ni rastro del anciano ni del Sr. Sawyer. Temiendo lo peor, os dirigís al pueblo de Dunwich para investigar, con la esperanza de encontrar respuestas.",
+      "texts": {
+        "agenda": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de agenda 2A",
+              "textBack": "Texto posterior de agenda 2A"
+            },
+            {
+              "textFront": "Texto frontal de agenda 2B",
+              "textBack": "Texto posterior de agenda 2B"
+            }
+          ]
+        },
+        "act": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de acto 2A",
+              "textBack": "Texto posterior de acto 2A"
+            },
+            {
+              "textFront": "Texto frontal de acto 2B",
+              "textBack": "Texto posterior de acto 2B"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "escenario5",
+      "name": "Escenario V: Invisibles y sin dimensión",
+      "baseText": "Tras registrar el pueblo de Dunwich, habéis descubierto una serie de documentos, entradas de diarios y teorías esotéricas. Leer todo ese material os deja cansados y agotados emocionalmente. La mayor parte del contenido lo escribió la misma persona: un hombre llamado Seth Bishop. Cuando preguntáis en el pueblo, descubrís que Seth es un habitante de Dunwich. Junto a varias personas más, Seth asistió de primera mano a la devastación causada por los acontecimientos de “el horror de Dunwich”, como Armitage llamó al incidente. Curiosamente, muy poca gente había visto a Seth por el pueblo desde entonces, y quienes lo vieron afirman que tenía los ojos inyectados en sangre y el rostro sudoroso y pálido.Estáis seguros de que alguien que hubiera visto lo que Seth ha visto parecería nervioso o paranoico. Pero cuanto más leéis sus frenéticos y delirantes escritos, más creéis que está implicado en los acontecimientos recientes. En ellos habla de haber “reunido los restos” y de haber usado métodos arcanos para “imbuir la esencia de los padres” en otras criaturas y, al final, en otras personas. Las explicaciones y diagramas que hay después son inenarrablemente complejos y desafían toda comprensión.Antes de que podáis encontrar a Seth y enfrentaros a él, varios hombres y mujeres del pueblo se os acercan presas del pánico. –¡Ha vuelto! –grita uno de ellos, al que reconocéis como Curtis Whateley, de la rama no podrida–. ¡Lo que sea que matara a los Frye ha vuelto! ¡Ha machacado la casa de los Bishop como si fuera de papel! –Curtis y los demás lugareños no dejan de dar voces, completamente asustados.",
+      "texts": {
+        "agenda": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de agenda 2A",
+              "textBack": "Texto posterior de agenda 2A"
+            },
+            {
+              "textFront": "Texto frontal de agenda 2B",
+              "textBack": "Texto posterior de agenda 2B"
+            }
+          ]
+        },
+        "act": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de acto 2A",
+              "textBack": "Texto posterior de acto 2A"
+            },
+            {
+              "textFront": "Texto frontal de acto 2B",
+              "textBack": "Texto posterior de acto 2B"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "escenario6",
+      "name": "Escenario VI: Donde atuarda la perdición",
+      "baseText": "Os despertáis con el sonido de unos chillidos. Temiendo lo peor, cogéis vuestras cosas y salís a las calles de Dunwich. En cuanto ponéis el pie en el exterior, notáis algo vil en el frío aire nocturno: un terrible y acre olor que apenas podéis describir, y una pesadez en la atmósfera que hace difícil respirar. Los ciudadanos de Dunwich han cerrado sus puertas a cal y canto, y el pueblo parece en silencio y solitario. A lo lejos, un tenue brillo sale de lo alto de una colina que hay por encima del pueblo. La conocéis por Zebulon y los registros de Armitage. Se llama Sentinel Hill. Los relatos sobre ella hablan de que allí se realizaban ritos satánicos; ritos en los que grandes piras rituales iluminaban el cielo nocturno mientras el suelo temblaba furiosamente bajo ellas.En los tejados de la aldea hay posadas bandadas de chotacabras, observando siniestramente cómo os montáis en la vieja y destartalada camioneta de Zebulon. Mientras conducís hacia Sentinel Hill, el aire se llena de más chillidos con un tono tan horrible que os duelen los oídos. Todo lo que habéis leído sobre Dunwich y experimentado allí ha llevado hasta este momento. Si el siniestro ritual que Seth quiere llevar a cabo tiene algo que ver con lo que Armitage y sus colegas evitaron hace meses, está relacionado con el favor de una antigua criatura: Yog-Sothoth. Si no lográis detener este ritual, podría significar la perdición total… no sólo para Dunwich, sino para el mundo entero.",
+      "texts": {
+        "agenda": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de agenda 2A",
+              "textBack": "Texto posterior de agenda 2A"
+            },
+            {
+              "textFront": "Texto frontal de agenda 2B",
+              "textBack": "Texto posterior de agenda 2B"
+            }
+          ]
+        },
+        "act": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de acto 2A",
+              "textBack": "Texto posterior de acto 2A"
+            },
+            {
+              "textFront": "Texto frontal de acto 2B",
+              "textBack": "Texto posterior de acto 2B"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "escenario7",
+      "name": "Escenario VII: Perdidos en el tiempo y el espacio",
+      "baseText": "Atravesar el portal es una experiencia totalmente distinta a todo lo que habéis vivido. Notáis cómo el cuerpo se retuerce y distorsiona, atravesando realidades mientras el portal os arrastra hacia su destino final: un lugar más allá de todo lo que pueda concebir la imaginación humana.De pronto, se hace el silencio, y el caos del viaje da paso a una sensación de soledad y temor. Estáis en un lugar inenarrable, algo que se escapa por mucho a vuestra capacidad de raciocinio, y además completamente alienígena. El paisaje es surrealista y extraño, y la arquitectura, imposible. Estáis tan lejos de casa que ese concepto se ha convertido en un sueño que pende de un hilo y que apenas lográis recordar. Incluso si encontráis la forma de salir de este terrible lugar, puede que jamás volváis a ser los mismos.",
+      "texts": {
+        "agenda": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de agenda 2A",
+              "textBack": "Texto posterior de agenda 2A"
+            },
+            {
+              "textFront": "Texto frontal de agenda 2B",
+              "textBack": "Texto posterior de agenda 2B"
+            }
+          ]
+        },
+        "act": {
+          "phases": [
+            {
+              "textFront": "Texto frontal de acto 2A",
+              "textBack": "Texto posterior de acto 2A"
+            },
+            {
+              "textFront": "Texto frontal de acto 2B",
+              "textBack": "Texto posterior de acto 2B"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

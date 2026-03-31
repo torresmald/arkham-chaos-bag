@@ -35,11 +35,11 @@ const currentCampaignName = computed(
   () => campaignStore.selectedCampaign?.campaign ?? "",
 );
 const currentDifficultyLabel = computed(
-  () => campaignStore.selectedDifficulty ?? "",
+  () => campaignStore.selectedDifficulty?.toUpperCase() ?? "",
 );
 const currentScenarioName = computed(
-  () => campaignStore.selectedScenarioId ?? "",
+  () => campaignStore.selectedScenario?.name ?? "",
 );
-const agendaProgressLabel = computed(() => campaignStore.agendaIndex ?? "");
-const actProgressLabel = computed(() => campaignStore.actIndex ?? "");
+const agendaProgressLabel = computed(() => (campaignStore.agendaIndex + 1).toString());
+const actProgressLabel = computed(() => (campaignStore.actIndex + 1).toString());
 </script>

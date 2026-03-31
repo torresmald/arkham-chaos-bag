@@ -5,6 +5,24 @@ import { defineStore } from "pinia";
 import { useChaosBagStore } from "../bag/chaos";
 const voiceId = "zAgdErjrxjfLDAiVdEij";
 const elevenlabsApiKey = import.meta.env.VITE_ELEVENLABS_API_KEY;
+
+const waitForAudioToFinish = (audio: HTMLAudioElement) =>
+    new Promise<void>((resolve) => {
+        if (audio.ended) {
+            resolve();
+            return;
+        }
+
+        const onEnd = () => {
+            audio.removeEventListener("ended", onEnd);
+            audio.removeEventListener("error", onEnd);
+            resolve();
+        };
+
+        audio.addEventListener("ended", onEnd, { once: true });
+        audio.addEventListener("error", onEnd, { once: true });
+    });
+
 export const useSoundsStore = defineStore('sounds', {
     state: () => ({
         success: new Audio(successSound) as HTMLAudioElement,
@@ -75,7 +93,7 @@ export const useSoundsStore = defineStore('sounds', {
                     const cachedAudio = new Audio(cachedAudioUrl);
                     cachedAudio.volume = this.volume;
                     await cachedAudio.play();
-                    this.speechCache.set(text, cachedAudioUrl);
+                    await waitForAudioToFinish(cachedAudio);
                     return;
                 }
 
@@ -97,6 +115,7 @@ export const useSoundsStore = defineStore('sounds', {
                 const audio = new Audio(audioUrl);
                 audio.volume = this.volume;
                 await audio.play();
+                await waitForAudioToFinish(audio);
             } catch (error) {
                 console.error(error);
             }

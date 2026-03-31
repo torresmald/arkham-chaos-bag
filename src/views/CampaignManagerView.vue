@@ -8,7 +8,7 @@
           class="rounded-lg border border-slate-700 px-3 py-1.5 text-xs text-slate-200 transition hover:border-slate-500 hover:text-white"
           @click="goBack"
         >
-          Volver
+          Bolsa
         </button>
         <h1 class="text-sm font-semibold tracking-tight">Gestionar campaña</h1>
         <span class="w-[60px]" />

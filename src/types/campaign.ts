@@ -8,16 +8,33 @@ export interface CampaignDifficultyConfig {
   tokens: Token[];
 }
 
+export type CampaignTransition =
+  | {
+      type: "phase";
+      track: Track;
+      index?: number;
+    }
+  | {
+      type: "scenario";
+      scenarioId: string;
+    }
+  | {
+      type: "campaign-end";
+    };
+
+export interface CampaignPhase {
+  text?: string;
+  textFront?: string;
+  textBack?: string;
+  next?: CampaignTransition;
+}
+
 interface Agenda {
-  phases: {
-    text: string;
-  }[];
+  phases: CampaignPhase[];
 }
 
 interface Act {
-  phases: {
-    text: string;
-  }[];
+  phases: CampaignPhase[];
 }
 
 interface CampaignScenarioTexts {
@@ -28,12 +45,22 @@ interface CampaignScenarioTexts {
 export interface CampaignScenario {
   id: string;
   name: string;
+  baseText?: string;
   texts: CampaignScenarioTexts;
+}
+
+export interface CampaignPrologue {
+  id: string;
+  name: string;
+  text?: string;
+  baseText?: string;
 }
 
 export interface CampaignConfigFile {
   campaign: string;
+  icon?: string;
   difficulties: Record<Difficulty, CampaignDifficultyConfig>;
+  prologue?: CampaignPrologue;
   scenarios: CampaignScenario[];
 }
 export interface CampaignProgress {
@@ -41,3 +68,5 @@ export interface CampaignProgress {
   agendaIndex: number;
   actIndex: number;
 }
+
+export type Track = "agenda" | "act";

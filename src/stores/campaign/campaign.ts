@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import type { Difficulty, CampaignConfigFile, CampaignProgress } from "../../types/campaign";
+import type { Difficulty, CampaignConfigFile, CampaignProgress, CampaignScenario } from "../../types/campaign";
 const CAMPAIGNS_STORAGE_KEY = "arkham-chaos-campaigns";
 const DIFFICULTY_STORAGE_KEY = "arkham-chaos-difficulty";
 const PROGRESS_STORAGE_KEY = "arkham-chaos-campaign-progress";
@@ -12,6 +12,7 @@ export const useCampaignStore = defineStore("campaign", {
         selectedCampaign: null as CampaignConfigFile | null,
         selectedDifficulty: null as Difficulty | null,
         selectedScenarioId: null as string | null,
+        selectedScenario: null as CampaignScenario | null,
         agendaIndex: 0,
         actIndex: 0,
     }),
@@ -57,6 +58,7 @@ export const useCampaignStore = defineStore("campaign", {
                     this.actIndex = storedProgress.actIndex;
                 } catch {
                     this.selectedScenarioId = null;
+                    this.selectedScenario = null;
                     this.agendaIndex = 0;
                     this.actIndex = 0;
                 }
@@ -73,6 +75,11 @@ export const useCampaignStore = defineStore("campaign", {
         },
         setScenarioProgress(progress: CampaignProgress) {
             this.selectedScenarioId = progress.scenarioId;
+            this.selectedScenario = this.campaigns.find(
+                (campaign) => campaign.campaign === this.selectedCampaign?.campaign
+            )?.scenarios.find(
+                (scenario) => scenario.id === this.selectedScenarioId
+            ) ?? null;
             this.agendaIndex = progress.agendaIndex;
             this.actIndex = progress.actIndex;
             localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(progress));
@@ -82,6 +89,7 @@ export const useCampaignStore = defineStore("campaign", {
             this.selectedDifficulty = null;
             this.isSelectedCampaign = false;
             this.selectedScenarioId = null;
+            this.selectedScenario = null;
             this.agendaIndex = 0;
             this.actIndex = 0;
             localStorage.removeItem(CAMPAIGNS_STORAGE_KEY);
